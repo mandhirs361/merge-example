@@ -1,0 +1,40 @@
+.mis-dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+.mis-dashboard__head {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.mis-dashboard__title {
+  margin: 0;
+  font-size: 20px;
+  color: var(--mis-text, #0f172a);
+}
+
+.mis-dashboard__subtitle {
+  margin: 4px 0 0;
+  font-size: 13px;
+  color: var(--mis-muted, #64748b);
+}
+
+.mis-dashboard__stamp {
+  font-size: 12px;
+  color: var(--mis-muted, #64748b);
+  border: 1px dashed var(--mis-border, #cbd5e1);
+  border-radius: 999px;
+  padding: 4px 12px;
+}
+
+.mis-dashboard__kpis {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}

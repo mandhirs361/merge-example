@@ -1,0 +1,24 @@
+{
+  "name": "analytics-portal-workspace",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Micro frontend example: analytics-portal (host) consuming analytics-portal-mis (remote) via Webpack 5 Module Federation",
+  "workspaces": [
+    "analytics-portal",
+    "analytics-portal-mis"
+  ],
+  "scripts": {
+    "start": "concurrently -n mis,portal -c magenta,cyan \"npm:start:mis\" \"npm:start:portal\"",
+    "start:mis": "npm run start --workspace analytics-portal-mis",
+    "start:portal": "npm run start --workspace analytics-portal",
+    "build": "npm run build:mis && npm run build:portal",
+    "build:mis": "npm run build --workspace analytics-portal-mis",
+    "build:portal": "npm run build --workspace analytics-portal",
+    "serve": "concurrently -n mis,portal -c magenta,cyan \"npm:serve:mis\" \"npm:serve:portal\"",
+    "serve:mis": "npm run serve --workspace analytics-portal-mis",
+    "serve:portal": "npm run serve --workspace analytics-portal"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}

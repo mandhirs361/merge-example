@@ -1,0 +1,43 @@
+:root {
+  --mis-surface: #ffffff;
+  --mis-border: #e2e8f0;
+  --mis-text: #0f172a;
+  --mis-muted: #64748b;
+}
+
+body {
+  margin: 0;
+  background: #f1f5f9;
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+.mis-standalone {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px 20px 48px;
+}
+
+.mis-standalone__bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+  font-size: 14px;
+  color: var(--mis-text);
+}
+
+.mis-standalone__badge {
+  background: #ede9fe;
+  color: #6d28d9;
+  border-radius: 999px;
+  padding: 3px 10px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.mis-standalone__hint {
+  color: var(--mis-muted);
+}

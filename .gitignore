@@ -1,0 +1,7 @@
+node_modules/
+dist/
+analytics-portal/dist/
+analytics-portal-mis/dist/
+.env
+*.log
+.DS_Store

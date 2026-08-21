@@ -9,8 +9,8 @@ export default function KpiCard({ label, value, delta }) {
       <p className="mis-kpi__value">{value}</p>
       {typeof delta === "number" && (
         <p className={`mis-kpi__delta mis-kpi__delta--${trend}`}>
-          {trend === "up" ? "▲" : "▼"} {Math.abs(delta).toFixed(1)}% vs last
-          month
+          {trend === "up" ? "▲" : "▼▼▼▼▼▼"} {Math.abs(delta).toFixed(1)}% vs
+          last month
         </p>
       )}
     </article>
